@@ -1,7 +1,7 @@
 <?php
 $par = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quae culpa ipsam necessitatibus impedit dolorum dolorem quisquam quos porro iure sequi qui suscipit ratione, consectetur voluptatibus enim in blanditiis nisi?";
 $lenPar = strlen($par);
-$badword = $_GET['bad'];
+$badword = $_GET['impedit'];
 $newPar = str_replace($badword, "***", $par);
 
 ?>
@@ -17,7 +17,7 @@ $newPar = str_replace($badword, "***", $par);
 </head>
 
 <body>
-    <p><?= $par ?></p>
+    <p><?php echo $par ?></p>
     <h2>Lunghezza paragrafo: <?= $lenPar ?></h2>
     <h3>Parola da censurare: <?= $badword ?></h3>
     <h1>Paragrafo censurato:</h1>
